@@ -49,7 +49,7 @@ app.get('/addToWatchList/:userId/:questionId',function(req,res){
     console.log( "userId = " + userId + " questionId " + questionId ); 
     watcher.addWatcher(userId, questionId);
 
-    var date = new Date().toISOString().slice(0, 19).replace('T', ' ');
+    //var date = new Date().toISOString().slice(0, 19).replace('T', ' '); Not needed 
 
     res.send("Hi, we will be watching the question and notify you if any answers are added");
     //add_to_watch_list(userId, questionId);
